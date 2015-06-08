@@ -31,3 +31,13 @@ Route::get('tags/{id}/delete', [
     'as' => 'tags.delete',
     'uses' => 'TagController@destroy',
 ]);
+
+
+Route::resource('api/categories', 'API\CategoryAPIController');
+
+Route::resource('categories', 'CategoryController');
+
+Route::get('categories/{id}/delete', [
+    'as' => 'categories.delete',
+    'uses' => 'CategoryController@destroy',
+]);
