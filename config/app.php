@@ -145,6 +145,9 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		'Illuminate\Html\HtmlServiceProvider',
+		'Laracasts\Flash\FlashServiceProvider',
+		'Mitul\Generator\GeneratorServiceProvider'
 	],
 
 	/*
@@ -193,6 +196,9 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
+		'Form' 		=> 'Collective\Html\FormFacade',
+		'Html' 		=> 'Collective\Html\HtmlFacade',
+		'Flash' 	=> 'Laracasts\Flash\Flash'
 	],
 
 ];
