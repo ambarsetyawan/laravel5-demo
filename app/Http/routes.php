@@ -23,3 +23,11 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+Route::resource('tags', 'TagController');
+
+Route::get('tags/{id}/delete', [
+    'as' => 'tags.delete',
+    'uses' => 'TagController@destroy',
+]);
