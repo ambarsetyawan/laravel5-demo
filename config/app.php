@@ -147,7 +147,9 @@ return [
 
 		'Illuminate\Html\HtmlServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
-		'Mitul\Generator\GeneratorServiceProvider'
+		'Mitul\Generator\GeneratorServiceProvider',
+
+		'Barryvdh\Debugbar\ServiceProvider'
 	],
 
 	/*
@@ -198,7 +200,9 @@ return [
 
 		'Form' 		=> 'Illuminate\Html\FormFacade',
 		'Html' 		=> 'Illuminate\Html\HtmlFacade',
-		'Flash' 	=> 'Laracasts\Flash\Flash'
+		'Flash' 	=> 'Laracasts\Flash\Flash',
+
+		'Debugbar' => 'Barryvdh\Debugbar\Facade',
 	],
 
 ];
